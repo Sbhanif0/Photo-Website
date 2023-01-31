@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html a {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+
+}
+body {
+  font-size: 62.5%;
+  width: 100%;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+/* 000000000000000000000000000000000000000000
+   Container
+000000000000000000000000000000000000000000 */
+#container {
+  width: 100%;
+}
+/* 000000000000000000000000000000000000000000
+   Top Section
+000000000000000000000000000000000000000000 */
+#top {
+  background-color: rgb(36, 33, 33);
+  padding: 0 2rem;
+  display: flex;
+  position: relative;
+  height: 4rem;
+}
+.top-nav {
+  left: 0.5rem;
+}
+.top-nav ul {
+  list-style: none;
+  font-size: 2.5rem;
+}
+.top-nav ul li {
+  display: inline-block;
+  margin-left: 0;
+}
+.top-nav ul li a {
+  color: #fff;
+  transition: .3s;
+  padding: 3px 18px;
+}
+.top-nav ul li a:hover{
+  background-color: rgb(255, 1, 128);
+  box-shadow: 0 0 30px rgb(0, 68, 255);
+  border-radius: 3px;
+}
+
+.top-search {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+.top-search input {
+  height: 2rem;
+  border-radius: 0.5rem;
+  width: 6rem;
+  border: none;
+  margin-right: 0.4rem;
+}
+.top-search input:nth-child(1) {
+  height: 2rem;
+  border-radius: 0.5rem;
+  width: 15rem;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+.top-search input:nth-child(2){
+  cursor: pointer;
+  background-color: #49ec49;
+  color: black;
+}
+.top-search input:nth-child(2):hover{
+  background-color: rgb(247, 63, 94);
+  color: white;
+  box-shadow: 0 0 13px 8px white;
+}
+
+.top-search .search {
+  font-size: 1rem;
+}
+/* 000000000000000000000000000000000000000000
+   Second Top Section
+000000000000000000000000000000000000000000 */
+#top-two {
+  display: flex;
+}
+.top-logo {
+  width: 50%;
+  padding: 1rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #49ec49;
+  user-select: none;
+}
+.top-social {
+  width: 50%;
+  text-align: right;
+  padding-right: 2rem;
+
+}
+.top-social img {
+  width: 2rem;
+  margin: 2.5rem 1.2rem 0 0;
+  background-color: rgb(241, 241, 241);
+  cursor: pointer;
+}
+.top-social img:hover{
+  background-color: rgb(255, 196, 0);
+  box-shadow: 0 0 40px 20px rgb(255, 255, 255);
+}
+/* 000000000000000000000000000000000000000000
+   Main Navbar
+000000000000000000000000000000000000000000 */
+#nav {
+  text-align: center;
+  font-size: 2.2rem;
+  background-color: rgb(27, 26, 26);
+  padding-bottom: 0.9rem;
+}
+#nav ul li {
+  display: inline-block;
+}
+#nav ul li a {
+  color: #fff;
+  margin-left: 0;
+  transition: .3s;
+  padding: 3px 18px;
+}
+#nav ul li a:hover{
+  background-color: rgb(255, 3, 3);
+  box-shadow: 0 0 20px rgb(0, 230, 19);
+  border-radius: 3px;
+}
+/* 000000000000000000000000000000000000000000
+   Hero Section
+000000000000000000000000000000000000000000 */
+#hero {
+  position: relative;
+  width: 100%;
+  background-color: black;
+}
+#hero img {
+  width: 100%;
+  height: 500px;
+  opacity: 0.5;
+  object-fit: over;
+}
+.hero-title {
+  position: absolute;
+  background-color: rgba(190, 143, 143, 0.288);
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 2rem;
+  text-align: center;
+  z-index: 2;
+}
+.hero-title h1 {
+  
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #90EE90, #fff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  font: 900 7vw 'Orbitron', sans-serif;
+  z-index: 1;
+  width: 100%;
+  animation: animate 4s infinite;
+  background: rgb(35, 241, 28);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.hero-title h1::after {
+  content: "welcome to sb hanif";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  animation: shine 4s infinite;
+}
+
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
+}
+
+.hero-title p{
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* 000000000000000000000000000000000000000000
+   Hero Section End
+000000000000000000000000000000000000000000 */
+
+/* 000000000000000000000000000000000000000000
+   Main Content Section
+000000000000000000000000000000000000000000 */
+#main-title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1.5rem 0;
+  pointer-events: none;
+  user-select: none;
+}
+#hr {
+  background-color: rgb(63, 62, 61);
+  height: 1rem;
+}
+#main {
+  column-count: 5;
+  column-gap: 7px;
+}
+#main img {
+  width: 100%;
+  margin-top: 6px;
+}
+#main img:hover {
+  filter: grayscale(100%);
+  border-radius: 3px;
+  box-shadow: 0 0 1px 2px rgb(255, 255, 255);
+}
+
+/* 000000000000000000000000000000000000000000
+   Footer Section
+000000000000000000000000000000000000000000 */
+#footer {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  padding: 0 2rem 0 2rem;
+}
+footer h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 1rem 0;
+}
+#footer-main {
+  display: flex;
+}
+#footer-main a {
+  background-color: rgb(12, 12, 11);
+  font-size: 1rem;
+  color: #fff;
+  padding:0.6rem;
+  margin: 0.3rem;
+  border-radius: 0.3rem;
+  float: left;
+  transition: .1s;
+}
+.category {
+  width: 33.33333333333333%;
+  min-height: 15rem;
+  overflow: hidden;
+  padding:0 0.5rem;
+}
+#footer-main a:hover{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 70px 10px rgb(255, 255, 255);
+  color: black;
+}
+.link {
+  width: 33.33333333333333%;
+  min-height: 15rem;
+  overflow: hidden;
+  padding:0 0.5rem;
+}
+.social {
+  width: 33.33333333333333%;
+  text-align: center;
+}
+.social img {
+  background-color: rgb(255, 255, 255);
+  width: 2rem;
+  margin: 1rem 0.9rem;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.social img:hover{
+  background-color: rgb(255, 196, 0);
+  box-shadow: 0 0 50px 30px rgb(255, 255, 255);
+}
+#copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding:70px 0 30px 0px;
+}
+#copyright span {
+  color: rgb(255, 255, 255);
+}
+#copyright a {
+  color: rgb(58, 120, 252);
+}
